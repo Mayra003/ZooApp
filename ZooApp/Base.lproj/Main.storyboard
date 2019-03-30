@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ZooApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yI0-qZ-Ye1">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexBackgroundColor" red="0.86303164769999996" green="0.86303164769999996" blue="0.86303164769999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="127" id="cgD-Hy-cx1" customClass="TVCAnimal" customModule="ZooApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="127"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cgD-Hy-cx1" id="3vL-gc-5HB">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="126.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pbn-PO-dEi">
+                                                    <rect key="frame" x="8" y="8" width="359" height="110"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="baboon" translatesAutoresizingMaskIntoConstraints="NO" id="Dzf-ur-AfE">
+                                                            <rect key="frame" x="8" y="6" width="110" height="97"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="110" id="Ey6-wo-D17"/>
+                                                                <constraint firstAttribute="height" constant="100" id="H5z-wZ-QFw"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rmm-Xa-Yuj">
+                                                            <rect key="frame" x="132" y="8" width="232" height="21"/>
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="1zo-5Q-unu">
+                                                            <rect key="frame" x="132" y="27" width="227" height="76"/>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                        </textView>
+                                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="FXQ-a3-JMK">
+                                                            <rect key="frame" x="126" y="27" width="227" height="76"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                        </textView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="bottom" secondItem="Dzf-ur-AfE" secondAttribute="bottom" constant="12" id="9qx-Tt-VQC"/>
+                                                        <constraint firstItem="Dzf-ur-AfE" firstAttribute="leading" secondItem="pbn-PO-dEi" secondAttribute="leading" constant="8" id="ef3-lC-TDL"/>
+                                                        <constraint firstItem="Dzf-ur-AfE" firstAttribute="top" secondItem="pbn-PO-dEi" secondAttribute="top" constant="11" id="mVD-w7-TT9"/>
+                                                        <constraint firstItem="1zo-5Q-unu" firstAttribute="leading" secondItem="Rmm-Xa-Yuj" secondAttribute="leading" id="rGs-Z8-dnw"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="pbn-PO-dEi" firstAttribute="leading" secondItem="3vL-gc-5HB" secondAttribute="leading" constant="8" id="8sH-Ed-3uf"/>
+                                                <constraint firstItem="pbn-PO-dEi" firstAttribute="top" secondItem="3vL-gc-5HB" secondAttribute="top" constant="8" id="g2E-3I-2D4"/>
+                                                <constraint firstAttribute="bottom" secondItem="pbn-PO-dEi" secondAttribute="bottom" constant="8" id="heU-H2-ncN"/>
+                                                <constraint firstAttribute="trailing" secondItem="pbn-PO-dEi" secondAttribute="trailing" constant="8" id="nfY-Kb-cbF"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.86303164769999996" green="0.86303164769999996" blue="0.86303164769999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <outlet property="ivAnimalImage" destination="Dzf-ur-AfE" id="Gnz-XJ-A0e"/>
+                                            <outlet property="laAnimalName" destination="Rmm-Xa-Yuj" id="dsh-P9-Bag"/>
+                                            <outlet property="laAnimaldes" destination="FXQ-a3-JMK" id="blX-jt-l7b"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="yI0-qZ-Ye1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1L4-G3-m6b"/>
+                            <constraint firstItem="yI0-qZ-Ye1" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Kst-Hs-yvJ"/>
+                            <constraint firstItem="yI0-qZ-Ye1" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="NL6-5J-tVn"/>
+                            <constraint firstItem="yI0-qZ-Ye1" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ZSQ-8M-jed"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="tvListAnimals" destination="yI0-qZ-Ye1" id="cVL-7D-OrI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="baboon" width="112" height="112"/>
+    </resources>
+</document>
